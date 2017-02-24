@@ -1,0 +1,8 @@
+services:
+    azenet_translation_keys.request_subscriber:
+        class: Azenet\TranslationKeysBundle\Event\RequestSubscriber
+        arguments: ["%azenet_translation_keys.parameter_name%", "%azenet_translation_keys.enabled%"]
+        calls:
+            - [setContainer, ["@service_container"]]
+        tags:
+            - { name: kernel.event_subscriber }

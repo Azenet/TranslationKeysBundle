@@ -1,0 +1,22 @@
+{
+    "name": "azenet/translation-keys-bundle",
+    "description": "Allows you to see keys untranslated on your website.",
+    "version": "1.0.0",
+    "minimum-stability": "stable",
+    "require": {
+        "symfony/symfony": "^2.8|^3"
+    },
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "azenet",
+            "email": "contact@ashka.me"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Azenet\\TranslationKeysBundle\\": ["src/"]
+        }
+    }
+}
+
